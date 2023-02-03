@@ -1,0 +1,29 @@
+{
+  "name": "product_website",
+  "version": "1.0.0",
+  "description": "Product_WebSite",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefferson-Felipy/Product_WebSite.git"
+  },
+  "author": "Jefferson_Felipe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefferson-Felipy/Product_WebSite/issues"
+  },
+  "homepage": "https://github.com/jefferson-Felipy/Product_WebSite#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
+}
