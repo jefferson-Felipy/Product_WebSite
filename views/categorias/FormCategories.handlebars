@@ -1,11 +1,16 @@
-<section>
+<section class="container_form_categories">
+    <h2>Cadastro de Categorias</h2>
     <form action="/createCategories" method="post">
-        <label for="">Name: </label>
-        <input type="text" placeholder="example: E-books">
+        <label for="">Name:
+            <input type="text" name="name" placeholder="example: E-books">
+        </label>
 
-        <label for="">Slug:</label>
-        <input type="text" placeholder="Eample: Books">
+        <label for="">Slug:
+            <input type="text" name="slug" placeholder="Eample: Books">
+        </label>
 
         <button class="btnCreateCategories">Criar Categoria</button>
     </form>
+
+    <a href="/">Cancelar</a>
 </section>

@@ -1,9 +1,11 @@
+@import './mixins.scss';
+
 header{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
+    width: 80%;
     height:120px;
-    background-color:rgb(180, 125, 231);
+    @include display-flex;
+    justify-content:space-around;
+    background-color:rgb(88, 185, 90);
 
     h1{
         margin:0px 10px 0px 15px;

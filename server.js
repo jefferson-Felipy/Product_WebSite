@@ -6,6 +6,13 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const path = require('path');
 
+//Models_
+// require('./models/Categoria');
+// const Categoria = mongoose.model('categorias');
+// require('./models/Postagem');
+// const Produto = mongoose.model('produtos');
+
+
 //Rotas_
 const Cat = require('./routers/categorias');
 

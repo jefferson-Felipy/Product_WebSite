@@ -1,5 +1,5 @@
-const mongoose = require('mngoose');
-const Schema = mongoose.schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const Categoria = Schema({
     name: {

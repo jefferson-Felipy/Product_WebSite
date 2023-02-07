@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.schema;
 
-const Postagem = Schema({
+const Produto = Schema({
     name: {
         type: String,
         required:true
@@ -27,6 +27,6 @@ const Postagem = Schema({
     }
 });
 
-mongoose.model('postagens',Postagem);
+mongoose.model('produtos',Produto);
 
-module.exports = Postagem;
+module.exports = Produto;

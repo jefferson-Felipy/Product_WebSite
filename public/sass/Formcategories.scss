@@ -1,0 +1,70 @@
+@import './mixins.scss';
+
+.container_form_categories{
+    width: 80%;
+    height:62vh;
+    margin-top:15px;
+    @include display-flex;
+    flex-direction:column;
+    background-color:rgb(228, 227, 227);
+    
+    h2{
+        text-decoration:underline;
+        margin:30px;
+
+    }
+
+    form{
+        width:60%;
+        margin-top:20px;
+
+        label{
+            width:90%;
+            font-size:18px;
+            margin:20px;
+
+            input{
+                width:90%;
+                height:45px;
+                font-size:18px;
+                padding-left:10px;
+                margin:20px;
+                border:none;
+                font-weight:600;
+            }
+        }
+
+        button{
+            
+            padding:10px 20px;
+            border:none;
+            background-color: rgb(55, 182, 55);
+            color:white;
+            font-size:18px;
+            margin:2em 0 0 11.5em;
+            cursor:pointer;
+            transition: ease-in-out 700ms;
+
+            &:hover{
+                border-radius: 25px;
+                background-color: rgb(37, 119, 47);
+                color:rgb(147, 145, 145);
+                box-shadow:3px 4px 5px #000;
+            }
+        }
+    }
+    
+    a{
+        color:rgb(246, 244, 244);
+        padding:12px;
+        position:relative;
+        top:24px;
+        right:20px;
+        background-color:rgb(82, 82, 192);
+        text-decoration:none;
+
+        &:hover{
+            background-color:rgb(67, 67, 164);
+        }
+    }
+}

@@ -6,17 +6,21 @@
 }
 
 body {
-  background-color: rgb(200, 211, 212);
+  background-color: rgb(255, 253, 253);
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 80%;
   height: 120px;
-  background-color: rgb(180, 125, 231);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(88, 185, 90);
 }
 header h1 {
   margin: 0px 10px 0px 15px;
@@ -35,6 +39,66 @@ header a {
 }
 header a:hover {
   color: #ccc;
+}
+
+.container_form_categories {
+  width: 80%;
+  height: 62vh;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(228, 227, 227);
+}
+.container_form_categories h2 {
+  text-decoration: underline;
+  margin: 30px;
+}
+.container_form_categories form {
+  width: 60%;
+  margin-top: 20px;
+}
+.container_form_categories form label {
+  width: 90%;
+  font-size: 18px;
+  margin: 20px;
+}
+.container_form_categories form label input {
+  width: 90%;
+  height: 45px;
+  font-size: 18px;
+  padding-left: 10px;
+  margin: 20px;
+  border: none;
+  font-weight: 600;
+}
+.container_form_categories form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(55, 182, 55);
+  color: white;
+  font-size: 18px;
+  margin: 2em 0 0 11.5em;
+  cursor: pointer;
+  transition: ease-in-out 700ms;
+}
+.container_form_categories form button:hover {
+  border-radius: 25px;
+  background-color: rgb(37, 119, 47);
+  color: rgb(147, 145, 145);
+  box-shadow: 3px 4px 5px #000;
+}
+.container_form_categories a {
+  color: rgb(246, 244, 244);
+  padding: 12px;
+  position: relative;
+  top: 24px;
+  right: 20px;
+  background-color: rgb(82, 82, 192);
+  text-decoration: none;
+}
+.container_form_categories a:hover {
+  background-color: rgb(67, 67, 164);
 }
 
 /*# sourceMappingURL=style.css.map */
