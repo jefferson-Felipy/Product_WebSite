@@ -1,0 +1,30 @@
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:120px;
+    background-color:rgb(180, 125, 231);
+
+    h1{
+        margin:0px 10px 0px 15px;
+        text-decoration:underline;
+        color:white;
+
+        &:hover{
+            color:#ccc;
+        }
+    }
+
+    a{
+        margin:10px;
+        text-decoration:none;
+        color:White;
+        font-size:18px;
+        text-transform:uppercase;
+
+        &:hover{
+            color:#ccc;
+        }
+    }
+
+}

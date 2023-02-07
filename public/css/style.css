@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: rgb(200, 211, 212);
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background-color: rgb(180, 125, 231);
+}
+header h1 {
+  margin: 0px 10px 0px 15px;
+  text-decoration: underline;
+  color: white;
+}
+header h1:hover {
+  color: #ccc;
+}
+header a {
+  margin: 10px;
+  text-decoration: none;
+  color: White;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header a:hover {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */

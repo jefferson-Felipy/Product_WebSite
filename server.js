@@ -6,6 +6,9 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const path = require('path');
 
+//Rotas_
+const Cat = require('./routers/categorias');
+
 //Configurando o Express-session_
 app.use(session({
     secret:'node1234',
@@ -40,7 +43,8 @@ mongoose.connect("mongodb://localhost/Product_WebSite")
 app.use(express.static(path.join(__dirname+'/public')));
 
 //Configurando as rotas_
-app.get('/',(req,res) => res.render('index'));
+app.get('/',(req,res) => res.render('home'));
+app.use('/',Cat);
 
 //Configurando o Servidor Express_
 const PORT = 8081;
