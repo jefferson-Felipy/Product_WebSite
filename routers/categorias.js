@@ -39,6 +39,13 @@ Cat.post('/createCategories',(req,res) => {
     }
 });
 
-
+Cat.get('/categorias',(req,res) => {
+    Categoria.find().lean().sort({date:'desc'}).then(categorias => {
+        res.render('categorias/categorias',{categorias:categorias,tamanho:categorias.length});
+    }).catch(err => {
+        req.flash("error_msg","Erro ao listar categorias: "+err);
+        res.redirect('/');
+    });
+});
 
 module.exports = Cat;
