@@ -1,33 +1,54 @@
+{{#each erros}}
+    <div class="erros">
+        <h3>{{texto}}</h3>
+        <hr style="margin:10px;">
+    </div>
+{{/each}}
+
 <article class="containerProducts">
     <h2>Cadastrar Produtos</h2>
     <form action="" method="post">
-        <label for="">Nome:
-            <input type="text" nam="name">
-        </label>
+        <div class="field_ons">
+            <label for="">Autor:
+                <input type="text" nam="autor">
+            </label>
 
-        <label for="">Slug:
-            <input type="text" name="slug">
-        </label>
 
-        <label for="">Categoria:
-            <select name="categoria" id="">
-                <option value="categoria"></option>
-            </select>
-        </label>
+            <label for="">Titulo:
+                <input type="text" name="titulo">
+            </label>
+        </div>
 
-        <label for="">Descrição:
-            <input type="text" name="descricao">
-        </label>
+        <div class="field_ons">
+            <label for="">Slug:
+                <input type="text" nam="slug">
+            </label>
 
-        <label for="">Conteudo: 
-            <input type="text" name="conteudo">
-        </label>
 
-        <label for="">Preço:
-            <input type="number" name="preco">
-        </label>
+            <label for="">Preço:
+                <input type="number" name="preco">
+            </label>
+        </div>
 
-        <button>cadastrar Produtos</button>
+        <div class="field_ons">
+            <label for="">Categoria:
+                <select name="categoria" id="">
+                    <option value="0" >Escolha uma opção</option>
+                </select>
+            </label>
+
+            <label for="">Descrição:
+                <input type="text" name="descricao">
+            </label>
+        </div>
+
+        <div class="field_ons">
+            <label for="">Conteudo: 
+                <textarea name="conteudo" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+
+        <button>Cadastrar Produtos</button>
         <a href="/" class="l-one">Cancelar</a>
         <a href="/FormCategories" class="l-cat">Cadastrar Categorias</a>
     </form>

@@ -78,7 +78,7 @@ header .field_header a:hover {
   width: 50%;
   height: 350px;
   background-color: #ccc;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 .body_menu .menu h2 {
   text-decoration: underline;
@@ -161,7 +161,7 @@ header .field_header a:hover {
 
 .containerProducts {
   width: 80%;
-  height: 120vh;
+  height: 78vh;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -174,17 +174,19 @@ header .field_header a:hover {
   margin: 18px;
 }
 .containerProducts form {
-  width: 60%;
+  width: 66%;
   margin-top: 20px;
 }
-.containerProducts form label {
-  width: 92%;
+.containerProducts form .field_ons {
+  display: flex;
+}
+.containerProducts form .field_ons label {
+  width: 48%;
   font-size: 18px;
   margin: 12px;
-  display: block;
 }
-.containerProducts form label input {
-  width: 90%;
+.containerProducts form .field_ons label select, .containerProducts form .field_ons label input {
+  width: 100%;
   height: 45px;
   font-size: 18px;
   padding-left: 10px;
@@ -192,13 +194,18 @@ header .field_header a:hover {
   border: none;
   font-weight: 600;
 }
+.containerProducts form .field_ons label textarea {
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+}
 .containerProducts form button {
   padding: 10px 20px;
   border: none;
   background-color: rgb(55, 182, 55);
   color: white;
   font-size: 18px;
-  margin: 2px 0 0 10em;
+  margin: 2px 0 0 14em;
   cursor: pointer;
   transition: ease-in-out 700ms;
 }
