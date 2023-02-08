@@ -1,8 +1,8 @@
 @import './mixins.scss';
 
-.container_form_categories{
+.containerProducts{
     width: 80%;
-    height:62vh;
+    height:120vh;
     margin-top:15px;
     @include display-flex;
     flex-direction:column;
@@ -11,7 +11,7 @@
     
     h2{
         text-decoration:underline;
-        margin:30px;
+        margin:18px;
 
     }
 
@@ -20,16 +20,17 @@
         margin-top:20px;
 
         label{
-            width:90%;
+            width:92%;
             font-size:18px;
-            margin:20px;
+            margin:12px;
+            display:block;
 
             input{
                 width:90%;
                 height:45px;
                 font-size:18px;
                 padding-left:10px;
-                margin:20px;
+                margin:15px;
                 border:none;
                 font-weight:600;
             }
@@ -42,7 +43,7 @@
             background-color: rgb(55, 182, 55);
             color:white;
             font-size:18px;
-            margin:2em 0 0 11.5em;
+            margin:2px 0 0 10em;
             cursor:pointer;
             transition: ease-in-out 700ms;
 
@@ -55,12 +56,25 @@
         }
     }
     
-    a{
+    .l-one{
         color:rgb(246, 244, 244);
         padding:12px;
         position:absolute;
         bottom:12px;
-        left:20px;
+        left:12px;
+        background-color:rgb(82, 82, 192);
+        text-decoration:none;
+
+        &:hover{
+            background-color:rgb(67, 67, 164);
+        }
+    }
+    .l-cat{
+        color:rgb(246, 244, 244);
+        padding:12px;
+        position:absolute;
+        top:22px;
+        right:10px;
         background-color:rgb(82, 82, 192);
         text-decoration:none;
 

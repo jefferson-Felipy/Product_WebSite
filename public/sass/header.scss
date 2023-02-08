@@ -17,16 +17,81 @@ header{
         }
     }
 
-    a{
-        margin:10px;
-        text-decoration:none;
-        color:White;
-        font-size:18px;
-        text-transform:uppercase;
+    .field_header{
+        width:65%;
+        display:flex;
 
-        &:hover{
-            color:#ccc;
+        .busca{
+            display:flex;
+            justify-content:center;
+            width:62%;
+
+            input{
+                width:72%;
+                height:40px;
+                padding-left:6px;
+                font-size:18px;
+                border:none;
+                border-radius:5px 0px 0px 5px;
+            }
+            img{
+                width: 40px;
+                height:40px;
+                background:white;
+                cursor:pointer;
+            }
+        }
+    
+        a{
+            margin:10px;
+            text-decoration:none;
+            color:White;
+            font-size:18px;
+            text-transform:uppercase;
+    
+            &:hover{
+                color:#ccc;
+            }
         }
     }
+}
 
+.body_menu{
+    width:80%;
+    height:calc(100% - 120px);
+    background-color:rgba(37, 37, 37, 0.572);
+    display:none;
+    justify-content: flex-end;
+    position:absolute;
+    top:120px;
+    z-index:1000;
+
+
+
+    .menu{
+        width:50%;
+        height:350px;
+        background-color:#ccc;
+        border-radius:10px;
+
+        h2{
+            text-decoration:underline;
+            text-align:center;
+            margin:25px;
+            font-size:22px;
+
+        }
+
+        a{
+            text-decoration:none;
+            font-weight:bold;
+            font-size:20px;
+            margin:15px 10px 10px 10px;
+            display:block;
+        }
+    }
+}
+
+.btn_close{
+    display:flex;
 }

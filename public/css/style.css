@@ -30,15 +30,72 @@ header h1 {
 header h1:hover {
   color: #ccc;
 }
-header a {
+header .field_header {
+  width: 65%;
+  display: flex;
+}
+header .field_header .busca {
+  display: flex;
+  justify-content: center;
+  width: 62%;
+}
+header .field_header .busca input {
+  width: 72%;
+  height: 40px;
+  padding-left: 6px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+header .field_header .busca img {
+  width: 40px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+}
+header .field_header a {
   margin: 10px;
   text-decoration: none;
   color: White;
   font-size: 18px;
   text-transform: uppercase;
 }
-header a:hover {
+header .field_header a:hover {
   color: #ccc;
+}
+
+.body_menu {
+  width: 80%;
+  height: calc(100% - 120px);
+  background-color: rgba(37, 37, 37, 0.572);
+  display: none;
+  justify-content: flex-end;
+  position: absolute;
+  top: 120px;
+  z-index: 1000;
+}
+.body_menu .menu {
+  width: 50%;
+  height: 350px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.body_menu .menu h2 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 25px;
+  font-size: 22px;
+}
+.body_menu .menu a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 10px 10px 10px;
+  display: block;
+}
+
+.btn_close {
+  display: flex;
 }
 
 .container_form_categories {
@@ -49,6 +106,7 @@ header a:hover {
   align-items: center;
   flex-direction: column;
   background-color: rgb(228, 227, 227);
+  position: relative;
 }
 .container_form_categories h2 {
   text-decoration: underline;
@@ -91,14 +149,114 @@ header a:hover {
 .container_form_categories a {
   color: rgb(246, 244, 244);
   padding: 12px;
-  position: relative;
-  top: 24px;
-  right: 20px;
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
   background-color: rgb(82, 82, 192);
   text-decoration: none;
 }
 .container_form_categories a:hover {
   background-color: rgb(67, 67, 164);
+}
+
+.containerProducts {
+  width: 80%;
+  height: 120vh;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(228, 227, 227);
+  position: relative;
+}
+.containerProducts h2 {
+  text-decoration: underline;
+  margin: 18px;
+}
+.containerProducts form {
+  width: 60%;
+  margin-top: 20px;
+}
+.containerProducts form label {
+  width: 92%;
+  font-size: 18px;
+  margin: 12px;
+  display: block;
+}
+.containerProducts form label input {
+  width: 90%;
+  height: 45px;
+  font-size: 18px;
+  padding-left: 10px;
+  margin: 15px;
+  border: none;
+  font-weight: 600;
+}
+.containerProducts form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(55, 182, 55);
+  color: white;
+  font-size: 18px;
+  margin: 2px 0 0 10em;
+  cursor: pointer;
+  transition: ease-in-out 700ms;
+}
+.containerProducts form button:hover {
+  border-radius: 25px;
+  background-color: rgb(37, 119, 47);
+  color: rgb(147, 145, 145);
+  box-shadow: 3px 4px 5px #000;
+}
+.containerProducts .l-one {
+  color: rgb(246, 244, 244);
+  padding: 12px;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: rgb(82, 82, 192);
+  text-decoration: none;
+}
+.containerProducts .l-one:hover {
+  background-color: rgb(67, 67, 164);
+}
+.containerProducts .l-cat {
+  color: rgb(246, 244, 244);
+  padding: 12px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  background-color: rgb(82, 82, 192);
+  text-decoration: none;
+}
+.containerProducts .l-cat:hover {
+  background-color: rgb(67, 67, 164);
+}
+
+.erros, .error_msg {
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  background-color: brown;
+  padding-top: 10px;
+}
+.erros h3, .error_msg h3 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.success_msg {
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  background-color: green;
+  padding-top: 10px;
+}
+.success_msg h3 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

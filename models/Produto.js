@@ -1,25 +1,33 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
-const Produto = Schema({
-    name: {
+const Produto = new Schema({
+    nomeAutor: {
         type: String,
-        required:true
     },
-    descricao: {
+    titulo: {
         type: String,
-        required:true
-    },
-    consteudo: {
-        type: String,
-        required:true
+        required: true
     },
     slug: {
         type: String,
-        required:true
+        required: true
+    },
+    preco: {
+        type: String,
+        required: true
+    },
+    descricao: {
+        type: String
+    },
+    conteudo: {
+        type: String,
+        required: true
     },
     categoria: {
-
+        type: Schema.Types.ObjectId,
+        ref: 'categorias',
+        required: true
     },
     date: {
         type: Date,

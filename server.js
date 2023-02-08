@@ -15,6 +15,7 @@ const path = require('path');
 
 //Rotas_
 const Cat = require('./routers/categorias');
+const Prod = require('./routers/Produtos');
 
 //Configurando o Express-session_
 app.use(session({
@@ -52,6 +53,7 @@ app.use(express.static(path.join(__dirname+'/public')));
 //Configurando as rotas_
 app.get('/',(req,res) => res.render('home'));
 app.use('/',Cat);
+app.use('/',Prod);
 
 //Configurando o Servidor Express_
 const PORT = 8081;
